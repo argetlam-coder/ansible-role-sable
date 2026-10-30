@@ -27,7 +27,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ sable_identifier }} \
       --log-driver=none \
-      --user={{ sable_uid }}:{{ sable_gid }} \
+      --user={{ sable_container_uid }}:{{ sable_container_gid }} \
       --cap-drop=ALL \
       --read-only \
       --network={{ sable_container_network }} \

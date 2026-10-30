@@ -26,6 +26,12 @@ sable_version: 1.22.11
 sable_uid: ""
 sable_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+sable_container_uid: "{{ sable_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+sable_container_gid: "{{ sable_gid }}"
+
 # The scheme used for serving Sable.
 sable_scheme: https
 
